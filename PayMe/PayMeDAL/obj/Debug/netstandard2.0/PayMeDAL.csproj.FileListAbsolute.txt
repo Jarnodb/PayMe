@@ -1,0 +1,5 @@
+C:\Users\jarno\Documents\PayMev2\PayMe\PayMeDAL\bin\Debug\netstandard2.0\PayMeDAL.deps.json
+C:\Users\jarno\Documents\PayMev2\PayMe\PayMeDAL\bin\Debug\netstandard2.0\PayMeDAL.dll
+C:\Users\jarno\Documents\PayMev2\PayMe\PayMeDAL\obj\Debug\netstandard2.0\PayMeDAL.csprojAssemblyReference.cache
+C:\Users\jarno\Documents\PayMev2\PayMe\PayMeDAL\obj\Debug\netstandard2.0\PayMeDAL.AssemblyInfoInputs.cache
+C:\Users\jarno\Documents\PayMev2\PayMe\PayMeDAL\obj\Debug\netstandard2.0\PayMeDAL.AssemblyInfo.cs

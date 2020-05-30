@@ -1,0 +1,43 @@
+﻿@model PayMe.Viewmodels.TransactionViewModel
+
+@{
+    ViewData["Title"] = "Transaction";
+}
+
+@section LandingPage{
+    <link rel="stylesheet" href="@Url.Content("~/css/LandingPage.css")" />
+}
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+            <div class="col-md-8 col-lg-6">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="login-heading mb-4">New transaction!</h3>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input asp-for="Money" type="number" step="0.10" class="form-control" placeholder="Amount">
+                                        <span asp-validation-for="Money" class="text-danger"></span>
+                                        <span class="text-danger">@ViewBag.Nope</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input asp-for="Code" type="text" step="0.10" class="form-control" placeholder="Recepient code">
+                                        <span asp-validation-for="Money" class="text-danger"></span>
+                                        <span class="text-danger">@ViewBag.Nope</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mt-2 w-100">Send money.</button>
+                                    <div class="text-center">
+                                        <a class="small" asp-action="Index" asp-controller="Home">Cancel.</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

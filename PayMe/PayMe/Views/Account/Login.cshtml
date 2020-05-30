@@ -1,0 +1,45 @@
+﻿@model PayMe.Viewmodels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section LandingPage{
+    <link rel="stylesheet" href="@Url.Content("~/css/LandingPage.css")" />
+}
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+            <div class="col-md-8 col-lg-6">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="login-heading mb-4">Welcome!</h3>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input asp-for="Password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me!</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mt-2 w-100">Log in.</button>
+                                    <div class="text-center">
+                                        <a class="small" asp-action="Register" asp-controller="Account">Register account.</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
